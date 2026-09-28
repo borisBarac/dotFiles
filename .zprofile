@@ -1,63 +1,46 @@
-
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='mvim'
-fi
-
 # OhMyZSH
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-plugins=(git ruby fnm git-extras node pip brew)
-
 export ZSH=/Users/borisbarac/.oh-my-zsh
-ZSH_THEME="awesomepanda"
-# ZSH_THEME="spaceship"
 export UPDATE_ZSH_DAYS=10
+export EDITOR='mvim'
 
-# source $ZSH/oh-my-zsh.sh
-# source ~/.profile
+plugins=(last-working-dir)
 
-# RVM
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-# NVM load
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# FNM load
+eval "$(/opt/homebrew/bin/fnm env --use-on-cd)"
+
+#BUN
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# BREW
+export PATH="/opt/homebrew/bin:$PATH"
+
+#Node global
+export PATH="/opt/homebrew/lib/node_modules:$PATH"
+
+# coreutils brew package
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+
+# Starship
+eval "$(starship init zsh)"
+
+# uv
+export PATH="/Users/boris/.local/bin:$PATH"
+
+# FZF
+source <(fzf --zsh)
+
 
 # Utils
 alias sbl='open -a "Sublime Text"'
 alias l='ls -asl'
 alias c='clear'
 alias ddd='rm -r $HOME/Library/Developer/Xcode/DerivedData/*'
+alias brew_update='brew update && brew upgrade --yes && brew cleanup'
 
 
 # GIT
@@ -77,13 +60,13 @@ alias gl='git log'
 alias glp='git lg'
 alias gsu='git submodule update --init'
 
+alias gaa='git add -A'
 alias gcm='git commit -m'
 alias gcv='git commit -a' #git commit with text editor
-alias gaacm='gaa && gcm'
 
 alias gr='git reset'
 alias grh='git reset --hard'
-alias gra='gaa && grh'
+alias grha='gaa && grh'
 alias gcall='git clean -dfx'
 
 alias gai='git add -i'
@@ -103,5 +86,23 @@ alias dsif='docker start aea180fd27c2'
 alias github='cd ~/Documents/GitHub/'
 alias h='cd ~/'
 alias bp='sbl ~/.bash_profile'
-alias zp='sbl ~/.zprofile'
+alias zp='sbl ~/.zshrc'
 alias vp='sbl ~/.vimrc'
+
+
+# bun completions
+[ -s "/Users/boris/.bun/_bun" ] && source "/Users/boris/.bun/_bun"
+export PATH="/opt/homebrew/sbin:$PATH"
+
+# Rust
+# export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+# export PATH="$HOME/.cargo/bin:$PATH"
+
+# # dcg: warn if hook was silently removed from Claude Code settings
+# if command -v dcg &>/dev/null && command -v jq &>/dev/null; then
+#   if [ -f "$HOME/.claude/settings.json" ] && \
+#      ! jq -e '.hooks.PreToolUse[]? | select(.hooks[]?.command | test("dcg$"))' \
+#        "$HOME/.claude/settings.json" &>/dev/null; then
+#     printf '\033[1;33m[dcg] Hook missing from ~/.claude/settings.json — run: dcg install\033[0m\n'
+#   fi
+# fi

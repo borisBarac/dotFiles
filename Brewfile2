@@ -1,0 +1,250 @@
+tap "anomalyco/tap", "https://github.com/anomalyco/homebrew-tap.git"
+tap "aws/tap"
+tap "charmbracelet/tap"
+tap "docker/tap"
+tap "goles/battery"
+tap "hashicorp/tap"
+tap "homebrew/bundle"
+tap "mas-cli/tap"
+tap "oven-sh/bun"
+tap "xcodesorg/made"
+# Search tool like grep, but optimized for programmers
+brew "ack"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3", link: true
+# Library for command-line editing
+brew "readline"
+# Download with resuming and segmented downloading
+brew "aria2"
+# Automatically restart SSH sessions and tunnels
+brew "autossh"
+# YAML Parser
+brew "libyaml"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# CLI tool to build, test, debug, and deploy Serverless applications using AWS SAM
+brew "aws-sam-cli"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
+# Programmable completion for Bash 3.2
+brew "bash-completion"
+# Toolchain of the web
+brew "biome"
+# Fancy interface to the Python interpreter
+brew "bpython"
+# Fish completion for brew-cask
+brew "brew-cask-completion"
+# Install RubyGems as Homebrew formulae
+brew "brew-gem"
+# Print information about OpenCL platforms and devices
+brew "clinfo"
+# Cross-platform make
+brew "cmake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# High quality MPEG Audio Layer III (MP3) encoder
+brew "lame"
+# H.264/AVC encoder
+brew "x264"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# Fast and simple Node.js version manager
+brew "fnm"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU database manager
+brew "gdbm"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Interact with Google Gemini AI models from the command-line
+brew "gemini-cli"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Small git utilities
+brew "git-extras"
+# Git extension for versioning large files
+brew "git-lfs"
+# CLI for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more
+brew "googleworkspace-cli"
+# Library to render SVG files using Cairo
+brew "librsvg"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
+# Tool for glamorous shell scripts
+brew "gum"
+# Convert source code to formatted text with syntax highlighting
+brew "highlight"
+# Improved top (interactive process viewer)
+brew "htop"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
+# Tools and libraries to manipulate images in select formats
+brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Handy way to save and run project-specific commands
+brew "just"
+# Modern load testing tool, using Go and JavaScript
+brew "k6"
+# Sophisticated file transfer program
+brew "lftp"
+# Next-gen compiler infrastructure
+brew "llvm"
+# Mac App Store command-line interface
+brew "mas"
+# MongoDB Shell to connect, configure, query, and work with your MongoDB database
+brew "mongosh"
+# Turn marked-up plain text into well-formatted documents
+brew "multimarkdown"
+# Chemical toolbox
+brew "open-babel"
+# AI coding agent, built for the terminal
+brew "opencode"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Pandoc filter for numbering and cross-referencing
+brew "pandoc-crossref"
+# Simplistic interactive filtering tool
+brew "peco"
+# CLI for Playwright: record/generate code, inspect selectors, take screenshots
+brew "playwright-cli"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Ruby version manager
+brew "rbenv"
+# Rsync for cloud storage
+brew "rclone"
+# Extremely fast Python linter, written in Rust
+brew "ruff"
+# Rust toolchain installer
+brew "rustup"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Terminal multiplexer
+brew "tmux"
+# Command-line client for Travis CI
+brew "travis"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Vi 'workalike' with many additional features
+brew "vim"
+# Internet file retriever
+brew "wget"
+# High-performance, high-quality MPEG-4 video library
+brew "xvid"
+# Tracks most-used directories to make cd smarter
+brew "z"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Real-time type-ahead completion for Zsh
+brew "zsh-autocomplete"
+# Application uninstaller
+cask "appcleaner"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
+# Menu bar usage monitor for Codex and Claude
+cask "codexbar"
+# Voice and text chat software
+cask "discord"
+# GIT client
+cask "fork"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# HTTP and GraphQL Client
+cask "insomnia"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Open-source screen recorder built with web technology
+cask "kap"
+# Software for Logitech devices
+cask "logi-options+"
+# Quick Look plug-in that renders source code with syntax highlighting
+cask "qlcolorcode"
+# Quick Look generator for Markdown files
+cask "qlmarkdown"
+# Quick Look plugin to view patch files
+cask "qlprettypatch"
+# Quick Look plugin for plaintext files without an extension
+cask "qlstephen"
+# Quick Look plugin for CSV files
+cask "quicklook-csv"
+# Build, run, and govern agents across the software development lifecycle
+cask "docker/tap/sbx"
+# Music streaming service
+cask "spotify"
+# System monitor for the menu bar
+cask "stats"
+# Text editor for code, markup and prose
+cask "sublime-text"
+# Application for inspecting installer packages
+cask "suspicious-package"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
+# Rust-based terminal
+cask "warp"
+# Quick Look plugin for webp files
+cask "webpquicklook"
+# Open-source version of the X.Org X Window System
+cask "xquartz"
+mas "Amphetamine", id: 937984704
+mas "Developer", id: 640199958
+mas "Keynote", id: 361285480
+mas "Magnet", id: 441258766
+mas "Numbers", id: 361304891
+mas "Pages", id: 361309726
+mas "Paste", id: 967805235
+vscode "augustocdias.tasks-shell-input"
+vscode "biomejs.biome"
+vscode "charliermarsh.ruff"
+vscode "christian-kohler.path-intellisense"
+vscode "edwinsulaiman.jetbrains-rider-dark-theme"
+vscode "github.github-vscode-theme"
+vscode "hashicorp.terraform"
+vscode "hbenl.vscode-test-explorer"
+vscode "kevinrose.vsc-python-indent"
+vscode "ldd-vs-code.jq-preview"
+vscode "llvm-vs-code-extensions.lldb-dap"
+vscode "meta.pyrefly"
+vscode "mikestead.dotenv"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-python-envs"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.test-adapter-converter"
+vscode "ms-vscode.vscode-speech"
+vscode "orta.vscode-twoslash-queries"
+vscode "oven.bun-vscode"
+vscode "pkief.material-icon-theme"
+vscode "prisma.prisma"
+vscode "run-at-scale.terraform-doc-snippets"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "tamasfe.even-better-toml"
+vscode "tomoki1207.pdf"
+vscode "vadimcn.vscode-lldb"
+vscode "vizards.deepseek-v4-for-copilot"
+vscode "wayou.vscode-todo-highlight"
+vscode "yzane.markdown-pdf"
+cargo "wasm-pack"
+uv "aider-chat", with: ["pip"]
+uv "huggingface-hub"
+uv "ruff"
+npm "corepack"
+npm "pino-pretty"
+npm "redis-cli"
